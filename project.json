@@ -3,6 +3,7 @@
   "description": "This process is used to fill all the data extracted from account opening form of citizen's bank in MIS system.",
   "main": "Main.xaml",
   "dependencies": {
+    "TRUST_AML_VERIFICATION": "[1.0.1]",
     "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.Mail.Activities": "[1.9.3]",

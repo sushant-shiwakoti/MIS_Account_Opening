@@ -810,6 +810,30 @@
           "lib/net461/System.ValueTuple.dll": {}
         }
       },
+      "TRUST_AML_VERIFICATION/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.Credentials.Activities": "1.1.6479.13204",
+          "UiPath.Excel.Activities": "2.9.3",
+          "UiPath.Mail.Activities": "1.9.3",
+          "UiPath.System.Activities": "20.10.1",
+          "UiPath.UIAutomation.Activities": "20.10.6"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/TRUST_AML_VERIFICATION.dll": {},
+          "lib/net45/TRUST_AML_VERIFICATION_Expressions_50899105.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "UiPath/20.10.7585.27318": {
         "type": "package",
         "compile": {
@@ -2948,6 +2972,27 @@
         "version.txt"
       ]
     },
+    "TRUST_AML_VERIFICATION/1.0.1": {
+      "sha512": "teAjLQRRw/kxBxoCkGOBUqGXBOwDSRW//V2qFmYjcTDvabQHWxFA6Jv3cfw7YyshlTIJYkFA3hwMPNpHAC8+uA==",
+      "type": "package",
+      "path": "trust_aml_verification/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        "contentFiles/any/any/.objects/.metadata",
+        "contentFiles/any/any/.objects/.type",
+        "lib/net45/.settings/Release/settings-1a5b880a.json",
+        "lib/net45/.settings/Release/settings-5190454b.json",
+        "lib/net45/.settings/Release/settings-590bb27b.json",
+        "lib/net45/.settings/Release/settings-9e9290da.json",
+        "lib/net45/.settings/Release/settings-a1b2dac1.json",
+        "lib/net45/.tmh/config.json",
+        "lib/net45/TRUST_AML_VERIFICATION.dll",
+        "lib/net45/TRUST_AML_VERIFICATION_Expressions_50899105.dll",
+        "lib/net45/project.json",
+        "trust_aml_verification.1.0.1.nupkg.sha512",
+        "trust_aml_verification.nuspec"
+      ]
+    },
     "UiPath/20.10.7585.27318": {
       "sha512": "JsTRlWDWgidI40/uzjexv8R+IA6fg+GHEoIT2/yUTN+0IPeypRqBhOnL2vYBKOIO7r7IdL7FFFda/1A13KeU+Q==",
       "type": "package",
@@ -3525,6 +3570,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "TRUST_AML_VERIFICATION >= 1.0.1 <= 1.0.1",
       "UiPath.Credentials.Activities >= 1.1.6479.13204 <= 1.1.6479.13204",
       "UiPath.Excel.Activities >= 2.9.3 <= 2.9.3",
       "UiPath.Mail.Activities >= 1.9.3 <= 1.9.3",
@@ -3546,6 +3592,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "TRUST_AML_VERIFICATION": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.1, 1.0.1]"
+          },
           "UiPath.Credentials.Activities": {
             "include": "Runtime",
             "target": "Package",
